@@ -1,5 +1,38 @@
 package hello
 fun main (args : Array<String>) {
+    // lession 2
+  //  Characters or char
+    var a : Char = 'c'
+    a = '\u0040'
+    println("a = $a")
+    var myName = "Thong"
+    for (eachChar in myName){
+        println("myName = $eachChar")
+    }
+
+    val strings : Array<String> = arrayOf("a","b","c","d")
+    for (strings in strings) {
+        println("strings = $strings")
+    }
+
+    val intNumbers : Array<Int> = Array<Int>(5, {i -> 2 * i})
+    for (intNumber in intNumbers){
+        println("intBumber = $intNumber")
+    }
+
+    val  text = """
+       |line 1
+       |line 2
+              """.trimMargin("|")
+   println(text)
+
+
+
+
+
+
+
+    /* lession1
     println("hello world")
     val x = 3.144444
    // x = 3.5555
@@ -40,5 +73,11 @@ fun main (args : Array<String>) {
     var c = 9
     c +=1
     println("c = $c")
+    */
+
+
+
+
+
 
 }
